@@ -18,22 +18,45 @@
   }
 }
 
-.evento{
-    border: 1px solid v.$grisClaro;
-    &__contenido{
-        padding: 2rem;
+.evento {
+  border: 1px solid v.$grisClaro;
+  &__imagen{
+    width: 100%;
+  }
+  &__contenido {
+    padding: 2rem;
+    @include m.tablet {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
-    &__fecha{
-        font-size: 1.4rem;
-        margin: 0;
+  }
+  &__fecha {
+    font-size: 1.4rem;
+    margin: 0;
+  }
+  &__nombre {
+    color: v.$gris;
+    margin: 1rem 0;
+    font-size: 2.2rem;
+  }
+  &__autor {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    &-imagen {
+      img {
+        border-radius: 50%;
+        width: 10rem;
+      }
     }
-    &__nombre{
-        color: v.$gris;
-        margin: 1rem 0;
-    }
-    &__autor{
-        &--imagen{
-            border-radius: 50%;
-        }
-    }
+  }
+  &__organizado-nombre,
+  &__organizado-texto {
+    margin: 0.5rem 0;
+  }
+  &__organizado-texto {
+    font-weight: 700;
+  }
 }

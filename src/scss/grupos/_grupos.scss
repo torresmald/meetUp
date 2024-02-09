@@ -1,0 +1,35 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.grupos {
+  padding: 3rem;
+  background-image: linear-gradient(
+    to bottom,
+    v.$primario 0%,
+    v.$primario 50%,
+    v.$secundario 50%,
+    v.$secundario 100%
+  );
+  @include m.tablet {
+    background-image: linear-gradient(
+      to right,
+      v.$primario 0%,
+      v.$primario 50%,
+      v.$secundario 50%,
+      v.$secundario 100%
+    );
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+  }
+  &__contenido {
+    max-width: 40rem;
+    padding: 1rem;
+  }
+  &__heading {
+    color: v.$blanco;
+  }
+  &__texto {
+    color: v.$blanco;
+  }
+}

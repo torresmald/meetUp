@@ -1,0 +1,31 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.categorias{
+    background-color: v.$grisClaro;
+    padding: 5rem 0;
+    &__heading{
+        text-align: center;
+        color: v.$gris;
+    }
+    &__grid{
+        @include m.tablet { 
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 3rem;
+        }
+        @include m.desktop { 
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+}
+
+.categoria{
+    &__imagen{
+
+    }
+    &__texto{
+        text-align: center;
+        font-weight: 700;
+    }
+}
