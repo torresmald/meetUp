@@ -9,7 +9,105 @@
     <link rel="stylesheet" href="build/css/app.css">
 </head>
 <body>
-
+    <header class="header contenedor">
+        <div class="header__logo">
+            <a href="index.html">
+                <img src="build/img/logo.png" alt="logo">
+            </a>
+        </div>
+        <nav class="navegacion">
+            <a href="#" class="navegacion__enlace--grupo">Crear Grupo</a>
+            <a href="#" class="navegacion__enlace">Iniciar Sesion</a>
+            <a href="#" class="navegacion__enlace">Registrarse</a>
+        </nav>
+    </header>
+    <section class="hero">
+        <h1 class="hero__texto">Encuentra o Crea un Grupo</h1>
+        <a href="#" class="hero__enlace">Obtener Cuenta</a>
+    </section>
+    <section class="busqueda">
+        <h2 class="busqueda__heading">Busca un Grupo en tu Ciudad</h2>
+        <div class="contenedor">
+            <form action="" class="formulario">
+                <select name="" id="" class="formulario__campo">
+                    <option value="">Programacion</option>
+                    <option value="">Diseño</option>
+                    <option value="">Negocios</option>
+                    <option value="">Moda</option>
+                    <option value="">Comida</option>
+                    <option value="">Cine</option>
+                </select>
+                <input type="text" placeholder="Nombre Evento" class="formulario__campo">
+                <input type="text" name="" id="" placeholder="Ciudad o Pais" class="formulario__campo">
+                <input type="submit" value="Buscar" class="formulario__campo">
+            </form>
+        </div>
+    </section>
+    <main class="eventos contenedor">
+        <h2 class="eventos__heading">Proximos Eventos</h2>
+        <div class="eventos__grid">
+            <div class="evento">
+                <a href="meeti.html">
+                    <img src="build/img/imagen1.jpg" alt="imagen" class="evento__imagen">
+                    <div class="evento__contenido">
+                        <p class="evento__fecha">XX de XX de XXXX</p>
+                        <h3 class="evento__nombre">
+                            Ideas de Negocios
+                        </h3>
+                        <div class="evento__autor">
+                            <div class="evento__autor-imagen">
+                                <img src="build/img/perfil1.jpg" alt="autor">
+                            </div>
+                            <div class="evento__autor-informacion">
+                                <p class="evento__organizado-texto">Organizado por:</p>
+                                <p class="evento__organizado-nombre">Jonathan</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="evento">
+                <a href="meeti.html">
+                    <img src="build/img/imagen2.jpg" alt="imagen" class="evento__imagen">
+                    <div class="evento__contenido">
+                        <p class="evento__fecha">XX de XX de XXXX</p>
+                        <h3 class="evento__nombre">
+                            Bitcoin y Criptos
+                        </h3>
+                        <div class="evento__autor">
+                            <div class="evento__autor-imagen">
+                                <img src="build/img/perfil1.jpg" alt="autor">
+                            </div>
+                            <div class="evento__autor-informacion">
+                                <p class="evento__organizado-texto">Organizado por:</p>
+                                <p class="evento__organizado-nombre">Jonathan</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="evento">
+                <a href="meeti.html">
+                    <img src="build/img/imagen3.jpg" alt="imagen" class="evento__imagen">
+                    <div class="evento__contenido">
+                        <p class="evento__fecha">XX de XX de XXXX</p>
+                        <h3 class="evento__nombre">
+                            Pizza paso a paso
+                        </h3>
+                        <div class="evento__autor">
+                            <div class="evento__autor-imagen">
+                                <img src="build/img/perfil2.jpg" alt="autor">
+                            </div>
+                            <div class="evento__autor-informacion">
+                                <p class="evento__organizado-texto">Organizado por:</p>
+                                <p class="evento__organizado-nombre">Jonathan</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </main>
     
 </body>
 </html>

@@ -1,0 +1,39 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.eventos {
+  padding: 5rem 0;
+
+  &__heading {
+    color: v.$gris;
+    text-align: center;
+  }
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 3rem;
+    @include m.tablet {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
+
+.evento{
+    border: 1px solid v.$grisClaro;
+    &__contenido{
+        padding: 2rem;
+    }
+    &__fecha{
+        font-size: 1.4rem;
+        margin: 0;
+    }
+    &__nombre{
+        color: v.$gris;
+        margin: 1rem 0;
+    }
+    &__autor{
+        &--imagen{
+            border-radius: 50%;
+        }
+    }
+}
